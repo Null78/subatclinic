@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Avenir-Regular';
+    src: url('../fonts/Avenir-Regular.ttf');
+}
+html, body {
+    font-family: 'Avenir-Regular' !important;
+}
+.btn-subat {
+    background-color: #32C4EB;
+    border-color: #32C4EB;
+    border-radius: 32px;
+    color: #fff;
+}
+.btn-subat:hover, .btn-subat:focus, .btn-subat:active {
+    color: #fff;
+}
+.header {
+    min-height: 100vh;
+}
+
+.w-l {
+    height: 2rem;
+}
+.w-h {
+    height: 3rem;
+}
+.w-80 {
+    width: 80%;
+}
+@media (max-width: 991.98px) {
+    .w-80 {
+        width: 100%;
+    }
+}
+.grid-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 991px) {
+    .grid-hero {
+        grid-template-columns: 1fr !important;
+    }
+    .spacer {
+        margin: 10px 0px !important;
+    }
+    .grid-hero .hero {
+        text-align: center !important;
+    }
+}
+@media (min-width: 992px) {
+    .section:nth-of-type(3n+1) .hero:first-child {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .section:nth-of-type(3n+1) .hero:last-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .navbar-nav {
+        flex-direction: row-reverse !important;
+    }
+    .map-responsive {
+        max-width: 90vw;
+    }
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.spacer {
+    margin: 25px 0px;
+}
+.rtl {
+    direction: rtl;
+}
+.bg-subat {
+    background: #32C4EB;
+}
+.bg-subat h1 {
+    color: #fff;
+}
+/* .bg-subat p {
+    color: #000;
+} */
+.list-stared {
+    list-style-image: url('../img/star-w.svg');
+}
+.grid {
+    padding-top: .5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 12px;
+    row-gap: 12px;
+}
+@media only screen and (max-width: 991px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .card-body p {
+        font-size: 1.24rem !important;
+    }
+    .grid .card:last-child {
+        grid-column:  1 / 2 span;
+    }
+    .card-body img {
+        width: 60px !important;
+        height: auto;
+    }
+    .card span {
+        font-size: .85rem !important;
+    }
+}
+.headroom.navbar-transparent {
+    background-color: #fff !important;
+}
+.card {
+    background: transparent;
+    border-radius: 0px;
+    text-align: center;
+    /* box-shadow: 0 5px 25px rgba(0, 0, 0, .06); */
+    padding: 16px;
+    position: relative;
+    transition: transform .25s ease-out;
+}
+.card span {
+    font-size: 1rem;
+}
+.card-body img {
+    width: 80px;
+    height: auto;
+}
