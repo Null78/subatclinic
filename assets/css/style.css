@@ -2,6 +2,21 @@
     font-family: 'Avenir-Regular';
     src: url('../fonts/Avenir-Regular.ttf');
 }
+@font-face {
+    font-family: 'subaticons';
+    src: url('../fonts/subaticons.eot?53276262');
+    src: url('../fonts/subaticons.eot?53276262#iefix') format('embedded-opentype'),
+         url('../fonts/subaticons.woff2?53276262') format('woff2'),
+         url('../fonts/subaticons.woff?53276262') format('woff'),
+         url('../fonts/subaticons.ttf?53276262') format('truetype'),
+         url('../fonts/subaticons.svg?53276262#subaticons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.icon-diagnosis:before { content: '\E800'; font-family: 'subaticons'; }
+.icon-knowledge:before { content: '\e801'; font-family: 'subaticons'; }
+.icon-medal:before { content: '\e802'; font-family: 'subaticons'; }
+
 html, body {
     font-family: 'Avenir-Regular' !important;
 }
@@ -127,7 +142,13 @@ html, body {
 .card span {
     font-size: 1rem;
 }
+.card i {
+    font-style: normal !important;
+}
 .card-body img {
     width: 80px;
     height: auto;
+}
+.icon-subat {
+    color: #32C4EB;
 }
