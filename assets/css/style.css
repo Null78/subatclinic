@@ -99,9 +99,6 @@ html, body {
 /* .bg-subat p {
     color: #000;
 } */
-.list-stared {
-    list-style-image: url('../img/star-w.svg');
-}
 .grid {
     padding-top: .5em;
     display: grid;
@@ -138,6 +135,7 @@ html, body {
     padding: 16px;
     position: relative;
     transition: transform .25s ease-out;
+    border: none !important;
 }
 .card span {
     font-size: 1rem;
@@ -272,4 +270,13 @@ footer i:not(.heart) {
     .wierd {
         max-width: 1300px;
     }
+}
+.features {
+    columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-image: url('../img/star.svg');
+}
+.features p {
+    text-align: right;
 }
