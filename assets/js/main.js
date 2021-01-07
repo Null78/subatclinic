@@ -8,6 +8,7 @@ $('a[href*="#"]')
             location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
             location.hostname == this.hostname
         ) {
+            $('html, body').css('overflow', 'initial');
             $('.navbar-toggler').click()
             // Figure out element to scroll to
             var target = $(this.hash);
@@ -31,5 +32,6 @@ $('a[href*="#"]')
                     };
                 });
             }
+            $('html, body').css('overflow', 'initial');
         }
     });
