@@ -159,6 +159,7 @@ html, body {
 }
 .bg-stars {
     background: url('../img/bg.png');
+    background-size: contain;
 }
 .text-white-75 {
     color: rgb(255, 255, 255, .75);
