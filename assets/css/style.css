@@ -258,6 +258,9 @@ footer i:not(.heart) {
     .up {
         right: 8% !important;
     }
+    .display-3 {
+        font-size: 2rem !important;
+    }
 }
 @media (min-width: 1200px) {
     .wierd {
