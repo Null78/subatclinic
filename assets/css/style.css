@@ -254,6 +254,11 @@ footer i:not(.heart) {
 .shadow {
     box-shadow: 0 1rem 3rem rgba(13, 20, 49, 0.175) !important;
 }
+@media (max-width: 991px) {
+    .up {
+        right: 8%;
+    }
+}
 @media (min-width: 1200px) {
     .wierd {
         max-width: 1200px;
