@@ -1,3 +1,14 @@
+$(document).on('scroll', () => {
+    var now = document.documentElement.scrollTop;
+    if (now >= 250) {
+        $('.up').css('bottom', '4%');
+    } else {
+        $('.up').css('bottom', '-6%');
+    }
+})
+$('.up').on('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+})
 $('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')

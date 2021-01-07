@@ -233,3 +233,34 @@ footer i:not(.heart) {
     color: #EB5E28;
     animation: heathing 1s ease infinite;
 }
+.up {
+    cursor: pointer;
+    position: fixed;
+    background: #32C4EB;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    bottom: -6%;
+    right: 5%;
+    z-index: 99;
+    border-radius: 50%;
+    color: #fff !important;
+    transition: all .45s ease;
+}
+.up:hover, .up:focus {
+    background: #000;
+}
+.shadow {
+    box-shadow: 0 1rem 3rem rgba(13, 20, 49, 0.175) !important;
+}
+@media (min-width: 1200px) {
+    .wierd {
+        max-width: 1200px;
+    }
+}
+@media (min-width: 1400px) {
+    .wierd {
+        max-width: 1300px;
+    }
+}
