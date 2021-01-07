@@ -30,7 +30,7 @@ html, body {
     color: #fff;
 }
 .header {
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .w-l {
@@ -151,4 +151,85 @@ html, body {
 }
 .icon-subat {
     color: #32C4EB;
+}
+.box {
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 90vw !important;
+}
+.bg-stars {
+    background: url('../img/bg.png');
+}
+.text-white-75 {
+    color: rgb(255, 255, 255, .75);
+}
+footer {
+    display: block;
+    color: #A7B7CC;
+    text-align: center;
+}
+footer .container {
+    min-width: 100%;
+}
+footer a {
+    text-align: center;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 35vh;
+    position: relative;
+    height: 0;
+    border-radius: 8px;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+footer p {
+    display: block;
+    color: #adb5bd;
+    text-align: center;
+}
+footer i:not(.heart) {
+    height: 44px;
+    width: 44px;
+    font-size: 20px;
+    vertical-align: middle;
+    background-color: #32C4EB;
+    color: #fff;
+    padding: 12px;
+    border-radius: 50%;
+}
+@keyframes heathing {
+    0% {
+        transform: scale(0.75);
+    }
+    20% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(0.75);
+    }
+    60% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(0.75);
+    }
+    100% {
+        transform: scale(0.75);
+    }
+}
+
+.heart {
+    color: #EB5E28;
+    animation: heathing 1s ease infinite;
 }
