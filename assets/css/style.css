@@ -256,7 +256,7 @@ footer i:not(.heart) {
 }
 @media (max-width: 991px) {
     .up {
-        right: 8%;
+        right: 8% !important;
     }
 }
 @media (min-width: 1200px) {
