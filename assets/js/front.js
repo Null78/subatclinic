@@ -49,7 +49,7 @@ $(document).ready(function () {
     });
 
     $navbarCollapse.on('shown.bs.collapse', function () {
-        $('html, body').css('overflow', 'hidden');
+        // $('html, body').css('overflow', 'hidden');
     });
 
     $('.navbar-main .dropdown').on('hide.bs.dropdown', function () {
