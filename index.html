@@ -23,6 +23,9 @@
     <link type="text/css" href="./assets/css/front.css" rel="stylesheet">
     <link type="text/css" href="./assets/css/style.css" rel="stylesheet">
 
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
     <!-- Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -125,7 +128,7 @@
             </div>
         </div>
         
-        <div class="section text-center bg-subat py-lg-4 py-5" id="dr">
+        <div class="section text-center bg-subat" id="dr">
             <div class="container">
                 <div class="grid-hero">
                     <div class="hero align-items-center">
@@ -133,16 +136,28 @@
                             class="aos-init aos-animate" data-aos-duration="700" style="width: 60%">
                     </div>
                     <div class="hero text-right" data-aos="fade-left" class="aos-init aos-animate"
-                        data-aos-duration="700">
+                        data-aos-duration="700" data-aos-offset="100">
                         <h1 class="mb-1 mt-3 ">الدكتور احمد الرحيمي</h1>
                         <h6 class="mb-4 mt-0 text-muted text-black">استشاري امراض صدرية وطب اضطرابات النوم</h6>
-                        <p class="px-2 mb-3 mb-md-5 mt-0 rtl text-black">
-                            -استشاري طب اضطرابات النوم
-                            <br>
-                            - الزمالة الكندية في أمراض طب النوم من جامعة تورنتو
-                            <br>
-                            - البورد الأمريكي في العلاج التنفسي
-                        </p>
+                        <div class="px-3 mb-3 mb-md-5 mt-2 ">
+                            <ul class="rtl text-black text-right">
+                                <li>
+                                    <p>
+                                        استشاري طب اضطرابات النوم
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        الزمالة الكندية في أمراض طب النوم من جامعة تورنتو
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        البورد الأمريكي في العلاج التنفسي
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
                         <!-- <div class="spacer"></div> -->
                     </div>
                 </div>
@@ -158,8 +173,8 @@
                     </div>
                     <div class="hero text-right w-100">
                         <h2 class="title mb-2 mt-0" data-aos="fade-right" data-aos-duration="700">ماذا يعالج</h2>
-                        <h5 class="title mb-4 mt-0" data-aos="fade-right" data-aos-duration="700">استشاري اضطرابات النوم ؟</h5>
-                        <ul class="rtl features">
+                        <h3 class="title mb-4 mt-0" data-aos="fade-right" data-aos-duration="700">استشاري اضطرابات النوم ؟</h3>
+                        <ul class="rtl features"  data-aos="fade-right" data-aos-duration="700" data-aos-delay="100">
                             <li>
                                 <p>
                                     <span>انقطاع التنفس الانسدادي النومي</span>
@@ -220,7 +235,7 @@
         <div class="section text-center bg-subat" id="why">
             <div class="container">
                 <div class="text-right">
-                    <h1 class="title mb-3 mt-3 rtl" data-aos="fade-left" data-aos-duration="700">
+                    <h1 class="title my-3 rtl" data-aos="fade-left" data-aos-duration="700">
                         لماذا
                         <span class="mx-1" style="vertical-align: text-top;">
                             <img class="w-h" src="./assets/img/logo-w.svg">
@@ -275,35 +290,45 @@
                 </div>
             </div>
         </div>
-
-        <div class="section text-center py-3">
-            <div class="py-5 bg-stars">
-                <div class="container">
-                    <h2 class="display-3 mb-2 mt-5 text-white">اكشف الآن</h2>
-                    <h6 class="text-white-75 font-weight-normal">
-                        وصف
-                    </h6>
-                    <div class="my-5">
-                        <a href="https://koonagency.typeform.com/to/KDgqCvFK?typeform-medium=embed-snippe"
-                            class="btn btn-subat btn-round typeform-share">اضغط هنا</a>
-                    </div>
+        <section class="bg-promotion text-center bg-stars">
+            <div class="container d-flex h-100 justify-content-center flex-column">
+                <h2 class="display-3 mb-2 mt-5 text-white">اكشف الآن</h2>
+                <h6 class="text-white-75 font-weight-normal">
+                    وصف
+                </h6>
+                <div class="my-5">
+                    <a href="https://koonagency.typeform.com/to/KDgqCvFK?typeform-medium=embed-snippe"
+                        class="btn btn-subat btn-round typeform-share">اضغط هنا</a>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
-    <footer class="text-right pt-4" style="position:relative; max-height: 30vh" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 pt-2 text-center">
-                    <!-- <h2 class="my-3" style="font-size: 1.25em">للتواصل والاستفسار</h2> -->
-                    <a href="tel:+966112011100" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-phone shadow"></i>
+    <footer class="text-right pt-4 pb-3" style="position:relative; max-height: 30vh" id="contact">
+        <div class="container px-3 px-lg-7">
+            <div class="d-flex justify-content-between flex-column-reverse flex-lg-row-reverse">
+                <p class="text-center mt-3 pb-1 pb-lg-3 font-weight-bold mb-0" dir="ltr">
+                    <span style="font-size: .85em;">
+                        <span style="font-size: .75em; vertical-align:top"> © </span>وكالة كون
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>&nbsp; | &nbsp;KOON Agency صنع بـ
+                        <i class="fa fa-heart heart" style="font-size: 1em;"></i>
+                        من
+                    </span>
+                </p>
+                <div class="pt-2 text-center rtl">
+                    <h6 class="m-2 d-inline">نسعد بكم:</h6>
+                    <a href="tel:+966112011100" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top" title="هاتف العيادة">
+                        <i class="fas fa-phone"></i>
                     </a>
-                    <a href="https://www.instagram.com/subatclinic/" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-instagram shadow"></i>
+                    <a href="https://www.instagram.com/subatclinic/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top" title="Instagram">
+                        <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://wa.me/966505999713" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-whatsapp shadow"></i>
+                    <a href="https://wa.me/966505999713" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top" title="Twitter">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://g.page/Subatclinic?share" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top" title="موقع العيادة">
+                        <i class="fas fa-map-marker-alt"></i>
                     </a>
                     
                     <!-- <a href="mailto:info@almuhyt.com" target="_blank" rel="noopener noreferrer">
@@ -311,18 +336,6 @@
                     </a> -->
                 </div>
             </div>
-        </div>
-        <div class="container px-0">
-            <p class="text-center mt-3 pb-3 font-weight-bold bg-light mb-0" dir="ltr">
-                <span style="font-size: .85em;">
-                    <span style="font-size: .75em; vertical-align:top"> © </span>وكالة كون
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>&nbsp; | &nbsp;KOON Agency صنع بـ
-                    <i class="fa fa-heart heart" style="font-size: 1em;"></i>
-                    من
-                </span>
-            </p>
         </div>
     </footer>
     <!-- Core -->
@@ -342,6 +355,9 @@
 
     <script>
         AOS.init();
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
     </script>
 </body>
 

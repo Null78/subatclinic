@@ -198,13 +198,13 @@ footer p {
     text-align: center;
 }
 footer i:not(.heart) {
-    height: 44px;
-    width: 44px;
-    font-size: 20px;
+    height: 36px;
+    width: 36px;
+    font-size: 16px;
+    line-height: 36px;
     vertical-align: middle;
     background-color: #32C4EB;
     color: #fff;
-    padding: 12px;
     border-radius: 50%;
 }
 @keyframes heathing {
@@ -260,6 +260,11 @@ footer i:not(.heart) {
     .display-3 {
         font-size: 1.5rem !important;
     }
+    .features {
+        columns: 1 !important;
+      -webkit-columns: 1 !important;
+      -moz-columns: 1 !important;
+    }
 }
 @media (min-width: 1200px) {
     .wierd {
@@ -279,4 +284,10 @@ footer i:not(.heart) {
 }
 .features p {
     text-align: right;
+}
+.bg-promotion {
+    position: relative;
+    background-position: 50%;
+    background-attachment: fixed;
+    height: 400px;
 }
