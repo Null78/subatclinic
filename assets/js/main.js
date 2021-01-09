@@ -1,3 +1,30 @@
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+});
+var app = document.getElementById('typewriter');
+
+var typewriter = new Typewriter(app, {
+    loop: true,
+    cursor: "",
+    delay: '100'
+});
+
+typewriter.typeString('اضطرابات النوم')
+    .pauseFor(2700)
+    .deleteAll()
+    .typeString('الأرق')
+    .pauseFor(2000)
+    .deleteAll()
+    .typeString('الهلع')
+    .pauseFor(2000)
+    .deleteAll()
+    .typeString('التبول اللاإرادي')
+    .pauseFor(2000)
+    .deleteAll()
+    .typeString('الكوابيس')
+    .pauseFor(2000)
+    .deleteAll()
+    .start();
 $(document).on('scroll', () => {
     var now = document.documentElement.scrollTop;
     if (now >= 250) {

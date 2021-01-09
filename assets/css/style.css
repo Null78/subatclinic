@@ -91,7 +91,7 @@ html, body {
     direction: rtl;
 }
 .bg-subat {
-    background: #32C4EB;
+    background: #32C4EB !important;
 }
 .bg-subat h1 {
     color: #fff;
@@ -157,7 +157,9 @@ html, body {
 }
 .bg-stars {
     background: url('../img/bg.png');
+    background-color: #000;
     background-size: contain;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
 }
 .text-white-75 {
     color: rgb(255, 255, 255, .75);
@@ -290,4 +292,14 @@ footer i:not(.heart) {
     background-position: 50%;
     background-attachment: fixed;
     height: 400px;
+}
+main {
+    background-color: #32C4EB;
+}
+.section, section {
+    background-color: #fff;
+}
+.section-rounded {
+    border-bottom-left-radius: 38px;
+    border-bottom-right-radius: 38px;
 }
