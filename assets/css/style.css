@@ -303,3 +303,10 @@ main {
     border-bottom-left-radius: 38px;
     border-bottom-right-radius: 38px;
 }
+.color-subat {
+    color: #32C4EB;
+    border-radius: 32px;
+}
+.color-subat:hover, .color-subat:focus, .color-subat:active {
+    color: #32C4EB !important;
+}
