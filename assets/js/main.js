@@ -3,28 +3,83 @@ $(function () {
 });
 var app = document.getElementById('typewriter');
 
-var typewriter = new Typewriter(app, {
-    loop: true,
-    cursor: "",
-    delay: '100'
-});
 
-typewriter.typeString('اضطرابات النوم')
-    .pauseFor(2700)
-    .deleteAll()
-    .typeString('الأرق')
-    .pauseFor(2000)
-    .deleteAll()
-    .typeString('الهلع')
-    .pauseFor(2000)
-    .deleteAll()
-    .typeString('التبول اللاإرادي')
-    .pauseFor(2000)
-    .deleteAll()
-    .typeString('الكوابيس')
-    .pauseFor(2000)
-    .deleteAll()
-    .start();
+
+
+
+
+
+
+
+
+
+var w = 0;
+var ti = 0;
+var words =['اضطرابات النوم', 'الأرق', 'الكوابيس'];
+var Rspeed = 150;
+var Dspeed = 110;
+var d = 0;
+pause = false;
+
+function typeWriter() {
+    if (ti > words.length) {
+        //
+    }
+    if (w < words[ti].length) {
+        document.getElementById("typewriter").innerHTML += words[ti].charAt(w);
+        w++;
+        
+    } else {
+        ti++;
+    }
+}
+setInterval( () => {
+    if (!pause) {
+        console.log(w, ti)
+        if (ti >= words.length) {
+            console.log('bigger')
+            pause = true
+            setTimeout(() => {
+                ti = 0;
+                pause = false
+            }, 800)
+        } else {
+            if (w < words[ti].length) {
+                document.getElementById("typewriter").innerHTML += words[ti].charAt(w);
+                w++;
+                
+            } else {
+                pause = true
+                console.log('paused')
+                d = words[ti].length
+                console.log(d)
+                dpause = false
+                setTimeout(() => {
+                    del = setInterval( () => {
+                        if (!dpause) {
+                            if (d < 0) {
+                                dpause = true
+                                console.log('next word')
+                                d = 0;
+                                ti++;
+                                w = 0;
+                                pause = false
+                                console.log('resume')
+                                clearInterval(del)
+                            } else {
+                                console.log('dding')
+                                document.getElementById("typewriter").innerHTML =  document.getElementById("typewriter").innerHTML.substring(0, document.getElementById("typewriter").innerHTML.length - 1);
+                                d--;
+                            }
+                        }
+                    }, Dspeed);
+                }, 1000)
+                
+            }
+        }
+    }
+    
+}, Rspeed)
 $(document).on('scroll', () => {
     var now = document.documentElement.scrollTop;
     if (now >= 250) {
