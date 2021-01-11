@@ -267,6 +267,9 @@ footer i:not(.heart) {
       -webkit-columns: 1 !important;
       -moz-columns: 1 !important;
     }
+    .letter-spacing {
+        letter-spacing: -1px !important;
+    }
 }
 @media (min-width: 1200px) {
     .wierd {
