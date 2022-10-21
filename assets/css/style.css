@@ -1,8 +1,4 @@
 @font-face {
-    font-family: 'Avenir-Regular';
-    src: url('../fonts/Avenir-Regular.ttf');
-}
-@font-face {
     font-family: 'subaticons';
     src: url('../fonts/subaticons.eot?53276262');
     src: url('../fonts/subaticons.eot?53276262#iefix') format('embedded-opentype'),
@@ -18,7 +14,7 @@
 .icon-medal:before { content: '\e802'; font-family: 'subaticons'; }
 
 html, body {
-    font-family: 'Avenir-Regular' !important;
+    font-family: 'Tajawal', sans-serif !important;
 }
 .btn-subat {
     background-color: #32C4EB;
